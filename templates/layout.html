@@ -10,24 +10,23 @@
         <nav>
           <ul class="menu">
             <li 
-                {% if actove_page == 'home' %} 
-                    class="active" 
+                {% if active_page == 'home' %} 
+                  class="active" 
                 {% endif %}
             >
                 <a href = "/home">Home</a>
             </li>
-            <li {% if actove_page == 'about' %} 
-                    class="active" 
+            <li {% if active_page == 'about' %} 
+                  class="active" 
                 {% endif %}
             >
                 <a href = "/about">About</a>
             </li>
-            <li {% if actove_page == 'contact' %} 
-                    class="active" 
+            <li {% if active_page == 'contact' %} 
+                  class="active" 
                 {% endif %}
             >
-                <a href = "/contact">Contact</a>
-              
+                <a href = "/contact">Contact</a>  
             </li>
           </ul>
         </nav>
@@ -35,7 +34,6 @@
     </header>
     <div class="container">
       {% block saturs %}
-      
       {% endblock %}
     </div>
   </body>

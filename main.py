@@ -16,4 +16,4 @@ def getContact() :
   return render_template('contact.html', phone = 3556269)
 
 if __name__ == '__main__' :
-  app.run(host="0.0.0.0" , threaded = True, port = '5000', debug = True)
+  app.run(host="0.0.0.0", port = '5000', threaded = True, debug = True)
